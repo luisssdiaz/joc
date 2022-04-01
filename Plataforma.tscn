@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://PNG/Ground/Grass/grassRight.png" type="Texture" id=1]
+[ext_resource path="res://PNG/Ground/Grass/grassMid.png" type="Texture" id=2]
+[ext_resource path="res://PNG/Ground/Grass/grassLeft.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 63, 181 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5, 53.5 )
+
+[sub_resource type="CircleShape2D" id=3]
+
+[node name="Plataforma" type="StaticBody2D"]
+
+[node name="Esquerra" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
+texture = ExtResource( 3 )
+offset = Vector2( -256, 0 )
+region_rect = Rect2( 0, 256, 128, 128 )
+
+[node name="Centre2" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 128, 128, 128 )
+
+[node name="Dreta" type="Sprite" parent="."]
+position = Vector2( -128, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 256, 0 )
+region_rect = Rect2( 0, 0, 128, 128 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1.3113e-06 )
+rotation = -1.5708
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -186, 0 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2( 186, 0.5 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2( 181, -53 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2( -181, -53 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+position = Vector2( 181, 53 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
+position = Vector2( -181, 53 )
+shape = SubResource( 3 )

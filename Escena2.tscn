@@ -1,0 +1,215 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://PNG/Ground/Grass/grassCliff_left.png" type="Texture" id=1]
+[ext_resource path="res://Personatge.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Porta.tscn" type="PackedScene" id=3]
+[ext_resource path="res://PNG/Ground/Grass/grassHalf.png" type="Texture" id=4]
+[ext_resource path="res://Clau.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Porta.gd" type="Script" id=6]
+[ext_resource path="res://Clau.gd" type="Script" id=7]
+[ext_resource path="res://PNG/Ground/Grass/grassLeft.png" type="Texture" id=8]
+[ext_resource path="res://FONS_PRINCIPAL.tscn" type="PackedScene" id=9]
+[ext_resource path="res://PNG/Ground/Grass/grassMid.png" type="Texture" id=10]
+[ext_resource path="res://PNG/Ground/Grass/grassRight.png" type="Texture" id=11]
+[ext_resource path="res://PNG/Ground/Grass/grassCenter.png" type="Texture" id=12]
+[ext_resource path="res://PNG/Ground/Grass/grassCliff_right.png" type="Texture" id=13]
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="TileSet" id=10]
+1/name = "grassCenter.png 1"
+1/texture = ExtResource( 12 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 11 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "grassLeft.png 2"
+2/texture = ExtResource( 8 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 12 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "grassMid.png 3"
+3/texture = ExtResource( 10 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 13 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "grassRight.png 4"
+4/texture = ExtResource( 11 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 14 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "grassHalf.png 5"
+5/texture = ExtResource( 4 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 15 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "grassCliff_left.png 6"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 16 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "grassCliff_right.png 7"
+7/texture = ExtResource( 13 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 17 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="FONS_PRINCIPAL" parent="." instance=ExtResource( 9 )]
+
+[node name="Porta" parent="." instance=ExtResource( 3 )]
+position = Vector2( 963, 105 )
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 6 )
+
+[node name="Clau" parent="." instance=ExtResource( 5 )]
+visible = false
+position = Vector2( 125, 168 )
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 7 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 914, 447 )
+scale = Vector2( 0.35, 0.35 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 0.5, 0.5 )
+tile_set = SubResource( 10 )
+format = 1
+tile_data = PoolIntArray( 65551, 5, 0, 196617, 5, 0, 327706, 6, 0, 327708, 3, 0, 327710, 7, 0, 393219, 5, 0, 589830, 5, 0, 720910, 5, 0, 983040, 2, 0, 983042, 3, 0, 983044, 3, 0, 983046, 3, 0, 983048, 3, 0, 983050, 3, 0, 983052, 3, 0, 983054, 3, 0, 983056, 3, 0, 983058, 3, 0, 983060, 3, 0, 983062, 3, 0, 983064, 3, 0, 983066, 3, 0, 983068, 3, 0, 983070, 4, 0, 1048576, 1, 0, 1048606, 1, 0, 1114112, 1, 0, 1114114, 1, 0, 1114116, 1, 0, 1114118, 1, 0, 1114120, 1, 0, 1114122, 1, 0, 1114124, 1, 0, 1114126, 1, 0, 1114128, 1, 0, 1114130, 1, 0, 1114132, 1, 0, 1114134, 1, 0, 1114136, 1, 0, 1114138, 1, 0, 1114140, 1, 0, 1114142, 1, 0, 1245184, 1, 0, 1245186, 1, 0, 1245188, 1, 0, 1245190, 1, 0, 1245192, 1, 0, 1245194, 1, 0, 1245196, 1, 0, 1245198, 1, 0, 1245200, 1, 0, 1245202, 1, 0, 1245204, 1, 0, 1245206, 1, 0, 1245208, 1, 0, 1245210, 1, 0, 1245212, 1, 0, 1245214, 1, 0, 1376256, 1, 0, 1376258, 1, 0, 1376260, 1, 0, 1376262, 1, 0, 1376264, 1, 0, 1376266, 1, 0, 1376268, 1, 0, 1376270, 1, 0, 1376272, 1, 0, 1376274, 1, 0, 1376276, 1, 0, 1376278, 1, 0, 1376280, 1, 0, 1376282, 1, 0, 1376284, 1, 0, 1376286, 1, 0 )
+
+[connection signal="body_entered" from="Porta" to="KinematicBody2D" method="_on_Porta_body_entered"]
